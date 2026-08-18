@@ -123,13 +123,7 @@
     first.append('基于 ');
     append(first, link('https://uptimerobot.com/', 'UptimeRobot'));
     first.append(' 接口制作，检测频率 5 分钟');
-    var second = append(footer, el('p'));
-    second.append('By ');
-    append(second, link('https://2024.eu.org/', '2024EU'));
-    second.append(' · CDN ');
-    append(second, link('https://www.cloudflare.com/', 'Cloudflare'));
-    second.append(' · 致谢 ');
-    append(second, link('https://github.com/rptecs', 'rptecs'));
+
 
     return uptime;
   }
