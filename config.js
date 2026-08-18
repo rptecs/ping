@@ -27,8 +27,8 @@ window.Config = {
       url: 'https://github.com/rptecs'
     },
     {
-      text: '博客',
-      url: 'https://2024.eu.org'
+      text: '探针',
+      url: 'https://guotai.de'
     },
   ],
 
