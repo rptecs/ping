@@ -1,7 +1,7 @@
 window.Config = {
 
   // [v2.0] 显示标题
-  SiteName: 'UpTime',
+  SiteName: '2024EU.ORG',
 
   // [v2.0] UptimeRobot Api Keys
   // 支持 Monitor-Specific 和 Read-Only
@@ -20,7 +20,7 @@ window.Config = {
   Navi: [
     {
       text: '主页',
-      url: 'https://2024.gq/'
+      url: 'https://2024.eu.org/'
     },
     {
       text: 'GitHub',
@@ -28,7 +28,7 @@ window.Config = {
     },
     {
       text: '博客',
-      url: 'https://2024.gq'
+      url: 'https://2024.eu.org'
     },
   ],
 
