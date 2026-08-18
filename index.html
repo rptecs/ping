@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
+  <link rel="preconnect" href="https://api.uptimerobot.com" />
+  <title>UpTime</title>
+  <script src="./config.js?v=20260524-4"></script>
+  <script>
+    if (window.Config) {
+      // Dynamic Title
+      if (window.Config.SiteName) document.title = window.Config.SiteName;
+
+      // SEO Meta Tags
+      const addMeta = (name, content) => {
+        if (!content) return;
+        let meta = document.createElement('meta');
+        meta.name = name;
+        meta.content = content;
+        document.head.appendChild(meta);
+      };
+      addMeta('description', window.Config.SEO_Description);
+      addMeta('keywords', window.Config.SEO_Keywords);
+
+      // Umami Analytics
+      if (window.Config.UmamiId && window.Config.UmamiServer) {
+        let script = document.createElement('script');
+        script.defer = true;
+        script.src = window.Config.UmamiServer + '/script.js';
+        script.setAttribute('data-website-id', window.Config.UmamiId);
+        document.head.appendChild(script);
+      }
+
+      // Custom CSS
+      if (window.Config.CustomCSS) {
+        let style = document.createElement('style');
+        style.innerHTML = window.Config.CustomCSS;
+        document.head.appendChild(style);
+      }
+    }
+  </script>
+  <script defer="defer" src="./static/js/app.js?v=20260524-7"></script>
+  <link href="./static/css/main.e4003dc1.css?v=20260524-10" rel="stylesheet">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    if (window.Config && window.Config.CustomJS) {
+      // Custom JS
+      let script = document.createElement('script');
+      script.innerHTML = window.Config.CustomJS;
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
